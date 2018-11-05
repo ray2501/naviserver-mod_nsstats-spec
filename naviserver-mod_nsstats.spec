@@ -4,7 +4,7 @@
 
 Summary:        NaviServer nsstats module
 Name:           naviserver-mod_nsstats
-Version:        1.7
+Version:        1.8
 Release:        0
 License:        MPL-1.1
 Group:          Productivity/Networking/Web/Servers
