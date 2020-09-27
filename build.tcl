@@ -1,7 +1,7 @@
 #!/usr/bin/tclsh
 
 set arch "noarch"
-set base "naviserver-mod_nsstats-1.8"
+set base "naviserver-mod_nsstats-1.9"
 
 file mkdir build/BUILD build/RPMS build/SOURCES build/SPECS build/SRPMS
 file copy -force $base.tar.gz build/SOURCES
