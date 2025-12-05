@@ -14,6 +14,7 @@ Patch0:        Makefile.patch
 URL:           https://sourceforge.net/projects/naviserver/
 BuildRequires: make
 BuildRequires: naviserver
+BuildRequires: naviserver-devel
 Requires:      tcl >= 8.6
 Requires:      naviserver
 BuildRoot:     %{buildroot}
@@ -27,11 +28,10 @@ performance and activity of your NaviServer installation.
 %patch 0
 
 %build
-make 
 
 %install
 mkdir -p %{buildroot}/var/lib/naviserver/pages
-make DESTDIR=%{buildroot} install
+make DESTDIR=%{buildroot} NAVISERVER=/var/lib/naviserver install
 
 %clean
 rm -rf %buildroot

@@ -1,11 +1,6 @@
---- Makefile.org	2025-12-02 13:38:41.718280145 +0800
-+++ Makefile	2025-12-02 13:49:46.790796168 +0800
-@@ -1,10 +1,10 @@
- ifndef NAVISERVER
--    NAVISERVER  = /usr/local/ns
-+    NAVISERVER  = /var/lib/naviserver
- endif
- 
+--- Makefile.org	2025-12-05 17:25:53.447851522 +0800
++++ Makefile	2025-12-05 17:26:27.926439871 +0800
+@@ -5,6 +5,6 @@
  include  $(NAVISERVER)/include/Makefile.module
  
  install:
